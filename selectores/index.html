@@ -1,9 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Estilos en una hoja externa la mas recomendada -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Selectores</title>
+    <!-- Estilos en la Cabecera del documento -->
+    <!-- <style>
+      h1 {
+        color: blue;
+        font-family: Georgia;
+      }
+
+      p {
+        color: brown;
+      }
+
+      @import url("css/styles.css");
+    </style> -->
   </head>
-  <body></body>
+  <body>
+    <!-- Estilos en Línea -->
+    <!-- <h1 style="color: blue; font-family: Georgia">Titulo de primer nivel</h1>
+    <p style="color: brown">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi sint,
+      culpa beatae soluta assumenda velit, vero quidem minus ducimus qui aut at
+      alias! Fuga maxime quam voluptatum modi natus!
+    </p> -->
+
+    <h1>Titulo de primer nivel</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi sint,
+      culpa beatae soluta assumenda velit, vero quidem minus ducimus qui aut at
+      alias! Fuga maxime quam voluptatum modi natus!
+    </p>
+
+    <h1 class="title">Titulo de primer nivel</h1>
+    <p class="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi sint,
+      culpa beatae soluta assumenda velit, vero quidem minus ducimus qui aut at
+      alias! Fuga maxime quam voluptatum modi natus!
+    </p>
+
+    <h1 id="title">Titulo de primer nivel</h1>
+    <p id="text">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi sint,
+      culpa beatae soluta assumenda velit, vero quidem minus ducimus qui aut at
+      alias! Fuga maxime quam voluptatum modi natus!
+    </p>
+
+    <!-- Selector de Atributo -->
+    <nav class="navegacion">
+      <ul>
+        <li><a class="rojo verde" href="">enlace 1 rojo verde</a></li>
+        <li><a class="verde" href="#">enlace 2 verde</a></li>
+        <li><a class="rojo" href="#">enlace 3 rojo</a></li>
+        <li><a class="verde rojo" href="#">enlace 4 verde rojo</a></li>
+      </ul>
+    </nav>
+
+    <h1>Titulo de primer nivel</h1>
+    <h2>subtitulo de nivel dos</h2>
+    <h2>Otro subtitulo de nivel dos</h2>
+    <h3>Subtitulo de nivel tres</h3>
+    <h3>Otro subtitulo de nivel tres</h3>
+
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
+        nobis dolore ipsa! Qui harum <span>SOY UN SPAN</span> est accusamus
+        distinctio tenetur perferendis maxime corrupti aspernatur. A culpa vel
+        assumenda blanditiis ex iure. Consequatur.
+      </p>
+      <span>SOY OTRO SPAN</span>
+    </div>
+
+    <h2>Selector descendiente</h2>
+    <ul class="descendiente">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h2>Selector de hijo directo</h2>
+    <ul class="hijo-directo">
+      <li><b>Primavera</b></li>
+      <li><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h2>Selector de hermano adyacente</h2>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermano-adyacente"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+
+    <h2>Selector de hermanos General</h2>
+    <ul>
+      <li><b>Primavera</b></li>
+      <li class="hermanos-general"><b>Verano</b></li>
+      <li><b>Otoño</b></li>
+      <li><b>Invierno</b></li>
+    </ul>
+  </body>
 </html>

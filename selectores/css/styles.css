@@ -1,0 +1,107 @@
+/* Selector Universal */
+* {
+  font-family: sans-serif;
+}
+
+/* Selector de etiqueta */
+/* h1 {
+  color: blue;
+  font-family: Georgia;
+} */
+
+/* p {
+  color: brown;
+} */
+
+/* Selector de Clase */
+/* .title {
+  color: green;
+} */
+
+/* .text {
+  color: purple;
+} */
+
+/* Selector de ID */
+/* #title {
+  color: red;
+} */
+
+/* #text {
+  color: darkgoldenrod;
+} */
+
+/* Selector de Atributos */
+
+/* A todos los enlaces que tengan este atributo */
+.navegacion a[href] {
+  color: green;
+}
+
+/* A todos los enlaces que tengan este atributo y este valor */
+.navegacion a[href="#"] {
+  color: red;
+}
+
+/* A todos los enlaces que tengan este atributo y que inician por este valor */
+.navegacion a[class^="rojo"] {
+  color: purple;
+}
+
+/* A todos los enlaces que tengan este atributo y que terminan por este valor */
+.navegacion a[class$="verde"] {
+  color: yellowgreen;
+}
+
+/* A todos los enlaces que tengan este atributo y contenga exactamente este valor y despues de ese valor venga un guion medio */
+.navegacion a[class|="rojo"] {
+  color: darkred;
+}
+
+.navegacion a[class~="verde"] {
+  color: blue;
+}
+
+.navegacion a[class*="verde"] {
+  color: cadetblue;
+}
+
+/* Selector de hermano adyacente ó hermano siguiente */
+h1 + h2 {
+  color: red;
+}
+
+h2 + h2 {
+  color: blue;
+}
+
+/* Selector de hermanos en general */
+h1 ~ h3 {
+  color: green;
+}
+
+/* Selector descendiente */
+div span {
+  color: blue;
+}
+
+/* Selector de hijo directo */
+p > span {
+  color: red;
+}
+
+.descendiente b {
+  background-color: burlywood;
+}
+
+.hijo-directo > li {
+  background-color: burlywood;
+}
+
+.hermano-adyacente + li {
+  background-color: burlywood;
+}
+
+.hermanos-general ~ li {
+  background-color: burlywood;
+}
