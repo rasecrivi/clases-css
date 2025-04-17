@@ -105,3 +105,9 @@ p > span {
 .hermanos-general ~ li {
   background-color: burlywood;
 }
+
+hr {
+  height: 3px;
+  border-color: brown;
+  background-color: brown;
+}
